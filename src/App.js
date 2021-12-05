@@ -7,6 +7,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture';
+import Rating from './components/Rating';
 
 
 function App() {
@@ -70,9 +71,16 @@ function App() {
           owner="Firstname Lastname"
           bgColor="#ddbb55"
           color="white" />
-
+  <div className='right'><h1>Rating</h1></div>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+<div className='right'><h1>Like Buttons</h1></div>
 <LikeButton /> <LikeButton />
-<div className='right'><h1>ClickablePictur</h1></div>
+<div className='right'><h1>ClickablePicture</h1></div>
 <ClickablePicture
   img='./assets/images/maxence.png'
   imgClicked='./assets/images/maxence-glasses.png'
